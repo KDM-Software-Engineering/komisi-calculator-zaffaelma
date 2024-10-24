@@ -9,8 +9,18 @@
  */
 
 // TULIS SCRIPT KAMU DI SINI
-
-
+function calculateKomisi(nilaiKontrak) {
+  if (nilaiKontrak > 1000000) {
+    return result= 100000;
+  } else if (nilaiKontrak > 5000000) {
+    return result = nilaiKontrak * 0.05;
+  } else {
+    return result = 0
+  }
+}
+nilaiKontrak = (100000)
+result = calculateKomisi(nilaiKontrak)
+console.log("Jika nilai kontrak adalah 100.000, maka nilai komisi adalah " + result + ".")
 
 // JANGAN HAPUS / UBAH SCRIPT DI BAWAH
 module.exports = calculateKomisi
